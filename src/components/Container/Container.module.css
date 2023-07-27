@@ -1,0 +1,44 @@
+.Container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.mainSection {
+  width: 45%;
+  height: 100%;
+  background-color: blue;
+  transition: transform 0.3s ease-in-out;
+}
+.RightSidebar {
+  width: 35%;
+  height: 100%;
+  background-color: red;
+  transition: transform 0.3s ease-in-out;
+}
+/* Styles for mobile screen */
+@media (max-width: 767px) {
+  .Container {
+    position: relative;
+  }
+
+  .Container > div:nth-child(1) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .Container > div:nth-child(3) {
+    display: none; /* Hide the first and third div for mobile */
+  }
+
+  .Container > div:nth-child(2) {
+    width: 100%; /* Take full width for the middle div on mobile */
+  }
+}
