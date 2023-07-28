@@ -47,14 +47,22 @@
     height: 60px;
     flex-direction: row;
     align-items: center;
-    justify-content: justify-between;
+    justify-content: center;
     border-right: none;
     border-top: hsl(214.3 31.8% 91.4%) 1px solid;
     background-color: white;
   }
   .sidebarItem {
-    background-color: white;
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sidebarNonActiveItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .ItemText {

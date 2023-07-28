@@ -15,8 +15,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  /* background-color: blue; */
+  overflow-y: scroll;
   transition: transform 0.3s ease-in-out;
 }
 .RightSidebar {
