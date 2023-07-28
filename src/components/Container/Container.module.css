@@ -13,6 +13,9 @@
 .mainSection {
   width: 45%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   /* background-color: blue; */
   transition: transform 0.3s ease-in-out;
 }
@@ -31,6 +34,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 10;
     height: 60px;
   }
   .Container > div:nth-child(3) {
