@@ -34,6 +34,16 @@
   border-bottom: hsl(214.3 31.8% 91.4%) 1px solid;
   padding: 10px;
 }
+.post_card__header__userDetail {
+  display: flex;
+  line-height: 1.3;
+  flex-direction: column;
+}
+.post_card__header__location {
+  font-size: 12px;
+  /* give light gray color */
+  color: hsl(210, 2%, 54%);
+}
 .post_card__header__userInfo {
   display: flex;
   gap: 10px;

@@ -63,6 +63,12 @@ export interface LinksData {
 }
 
 export interface UserData {
+  profile_image: {
+    small: string;
+    medium: string;
+    large: string;
+  };
+  for_hire: boolean;
   id: string;
   updated_at: string;
   username: string;
