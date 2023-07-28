@@ -1,3 +1,4 @@
+"use client";
 import { useInfiniteFetch } from "@/hooks/useInfiniteFetch";
 import { useIntersection } from "@mantine/hooks";
 import React, { useEffect, useRef } from "react";

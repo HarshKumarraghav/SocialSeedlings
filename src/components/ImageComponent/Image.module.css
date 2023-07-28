@@ -1,0 +1,12 @@
+.post_image {
+  width: 500px;
+  height: 380px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .post_image {
+    width: 333px;
+    height: 333px;
+    object-fit: cover;
+  }
+}
