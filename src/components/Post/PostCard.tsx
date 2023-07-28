@@ -39,21 +39,21 @@ const PostCard = ({ Item }: PostCardProps) => {
           <div className="post_card__header__userDetail">
             <span className="post_card__header__username">
               {username || "john doe"}
+              <span className="post_card__header__greentick">
+                {for_hire && (
+                  <Image
+                    alt={name}
+                    width={15}
+                    height={15}
+                    src={"/images/icons/greentick.png"}
+                  />
+                )}
+              </span>
             </span>
             <span className="post_card__header__location">
               {location || "earth"}
             </span>
           </div>
-          <span className="post_card__header__greentick">
-            {for_hire && (
-              <Image
-                alt={name}
-                width={15}
-                height={15}
-                src={"/images/icons/greentick.png"}
-              />
-            )}
-          </span>
         </div>
         <div className="post_card__header__time">
           <span>

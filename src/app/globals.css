@@ -44,6 +44,12 @@
   /* give light gray color */
   color: hsl(210, 2%, 54%);
 }
+.post_card__header__greentick {
+  margin-left: 3px;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
 .post_card__header__userInfo {
   display: flex;
   gap: 10px;
