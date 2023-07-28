@@ -1,18 +1,19 @@
 "use client";
-import useReadableTime from "@/hooks/useReadableTime";
-import Image from "next/image";
 import React from "react";
-import { FcLikePlaceholder, FcLike } from "react-icons/fc";
-import { BiSolidPhotoAlbum } from "react-icons/bi";
-import { AiOutlineCloudDownload } from "react-icons/ai";
-import { UnsplashPhotoData } from "../../../types/UnsplashPhotoData";
+import Image from "next/image";
 import Classes from "./PostCard.module.css";
+import { useRouter } from "next/navigation";
+import { BiSolidPhotoAlbum } from "react-icons/bi";
+import useReadableTime from "@/hooks/useReadableTime";
+import { AiOutlineCloudDownload } from "react-icons/ai";
+import { FcLikePlaceholder, FcLike } from "react-icons/fc";
 import ImageComponent from "../ImageComponent/ImageComponent";
+import { UnsplashPhotoData } from "../../../types/UnsplashPhotoData";
 type PostCardProps = {
   Item: UnsplashPhotoData;
 };
-
 const PostCard = ({ Item }: PostCardProps) => {
+  const Router = useRouter();
   // userinfo
   const {
     name,
@@ -30,7 +31,15 @@ const PostCard = ({ Item }: PostCardProps) => {
   return (
     <div className={Classes.post_card}>
       <div className={Classes.post_card__header}>
-        <div className={Classes.post_card__header__userInfo}>
+        <div
+          className={Classes.post_card__header__userInfo}
+          style={{
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            Router.push(`/User/${username}`);
+          }}
+        >
           <Image
             className={Classes.post_card__header__image}
             alt={username || "john doe"}
@@ -64,14 +73,12 @@ const PostCard = ({ Item }: PostCardProps) => {
         </div>
       </div>
 
+      {/* The `ImageComponent` component is rendering an image with the `src`
+      prop set to either the `full` or `regular` property of the `Item.urls`
+      object. The `alt` prop is set to "Post" and the `hash` prop is set to the
+      `blur_hash` property of the `Item` object. */}
+
       <ImageComponent src={full || regular} alt="Post" hash={blur_hash} />
-      {/* <Image
-          width={100}
-          height={100}
-          src={full || regular}
-          alt="Post"
-          className={Classes.post_image}
-        /> */}
 
       <div className={Classes.post_card__footer}>
         <div className={Classes.post_card__footer__left}>
