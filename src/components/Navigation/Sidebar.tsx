@@ -8,7 +8,7 @@ const Sidebar = () => {
     <div className={Classes.Sidebar}>
       <div className={Classes.sidebarItem}>
         <AiOutlineHome size={30} />
-        <p className={Classes.ItemText}>Home</p>
+        <p className={Classes.ItemText}>Feed</p>
       </div>
       <div className={Classes.sidebarNonActiveItem}>
         <BsGlobe size={30} />

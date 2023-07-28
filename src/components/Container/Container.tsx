@@ -3,6 +3,7 @@
 import React from "react";
 import Classes from "./Container.module.css";
 import Sidebar from "../Navigation/Sidebar";
+import Details from "../Details/Details";
 const Container = () => {
   return (
     <div className={Classes.Container}>
@@ -10,7 +11,9 @@ const Container = () => {
         <Sidebar />
       </div>
       <div className={Classes.mainSection}>main</div>
-      <div className={Classes.RightSidebar}>asdfdasdf</div>
+      <div className={Classes.RightSidebar}>
+        <Details />
+      </div>
     </div>
   );
 };

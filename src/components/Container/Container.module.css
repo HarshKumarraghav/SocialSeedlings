@@ -13,13 +13,12 @@
 .mainSection {
   width: 45%;
   height: 100%;
-  background-color: blue;
+  /* background-color: blue; */
   transition: transform 0.3s ease-in-out;
 }
 .RightSidebar {
   width: 35%;
   height: 100%;
-  background-color: red;
   transition: transform 0.3s ease-in-out;
 }
 /* Styles for mobile screen */
@@ -35,10 +34,10 @@
     height: 60px;
   }
   .Container > div:nth-child(3) {
-    display: none; /* Hide the first and third div for mobile */
+    display: none;
   }
 
   .Container > div:nth-child(2) {
-    width: 100%; /* Take full width for the middle div on mobile */
+    width: 100%;
   }
 }
