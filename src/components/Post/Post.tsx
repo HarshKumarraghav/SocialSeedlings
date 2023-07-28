@@ -4,6 +4,7 @@ import { useIntersection } from "@mantine/hooks";
 import React, { useEffect, useRef } from "react";
 import PostCard from "./PostCard";
 import { UnsplashPhotoData } from "../../../types/UnsplashPhotoData";
+import Loader from "../Loader/Loader";
 
 const Post = () => {
   const { data, isLoading, hasNextPage, isFetchingNextPage, fetchNextPage } =
@@ -22,7 +23,7 @@ const Post = () => {
   //   }
   // }, [hasNextPage, isFetchingNextPage, entry]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loader />;
 
   return (
     <div>
@@ -39,7 +40,7 @@ const Post = () => {
           })}
         </React.Fragment>
       ))}
-      {isFetchingNextPage && <div>Loading...</div>}
+      {isFetchingNextPage && <Loader />}
     </div>
   );
 };
