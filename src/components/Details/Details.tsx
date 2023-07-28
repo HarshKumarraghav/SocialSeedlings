@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Classes from "./Details.module.css";
+import Image from "next/image";
 const Details = () => {
   const SectionItem = [
     {
@@ -28,7 +29,9 @@ const Details = () => {
           {SectionItem?.map((item, index) => {
             return (
               <div className={Classes.Details__section1__item} key={index}>
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   src={item.icon}
                   alt={item.title}
                   style={{
