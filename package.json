@@ -17,6 +17,7 @@
     "axios": "^1.4.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "moment": "^2.29.4",
     "next": "13.4.12",
     "next-themes": "^0.2.1",
     "react": "18.2.0",

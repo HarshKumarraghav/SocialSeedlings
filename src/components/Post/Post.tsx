@@ -8,8 +8,6 @@ const Post = () => {
     useInfiniteFetch();
   const lastPostRef = useRef<HTMLDivElement>(null);
 
-  /* The code `const { ref, entry } = useIntersection({ root: lastPostRef.current, threshold: 1 });` is
- using the `useIntersection` hook from the `@mantine/hooks` library. */
   const { ref, entry } = useIntersection({
     root: lastPostRef.current,
     threshold: 1,
@@ -21,19 +19,25 @@ const Post = () => {
   //     fetchNextPage();
   //   }
   // }, [hasNextPage, isFetchingNextPage, entry]);
+
   if (isLoading) return <div>Loading...</div>;
+
   return (
-    <div className="post-cards-wrapper">
+    <div>
       {data?.pages.map((group, i) => (
-        <div key={i} className="post-group">
-          {group.map((post: { id: any }, j: number) => {
+        <React.Fragment key={i}>
+          {group.map((post: any, j: any) => {
             const isLastItem =
               i === data.pages.length - 1 && j === group.length - 1;
-            return <PostCard key={post.id} ref={isLastItem ? ref : null} />;
+            return (
+              <div key={post.id} ref={isLastItem ? ref : null}>
+                <PostCard />
+              </div>
+            );
           })}
-          {isFetchingNextPage && <div>Loading...</div>}
-        </div>
+        </React.Fragment>
       ))}
+      {isFetchingNextPage && <div>Loading...</div>}
     </div>
   );
 };
