@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { BiSolidPhotoAlbum } from "react-icons/bi";
 import useReadableTime from "@/hooks/useReadableTime";
 import { AiFillEye, AiOutlineCloudDownload } from "react-icons/ai";
-import { FcLikePlaceholder, FcLike } from "react-icons/fc";
+import { FcLike } from "react-icons/fc";
 import ImageComponent from "../ImageComponent/ImageComponent";
 import { UnsplashPhotoData } from "../../../types/UnsplashPhotoData";
 type PostCardProps = {
@@ -20,7 +20,10 @@ const PostCard = ({ Item }: PostCardProps) => {
     Item.user;
   // image
   const { full, regular } = Item.urls;
+  // post info
   const { views, likes, downloads, created_at, blur_hash } = Item;
+  // download image Link
+  const { download } = Item.links;
   return (
     <div className={Classes.post_card}>
       <div className={Classes.post_card__header}>
@@ -95,7 +98,7 @@ const PostCard = ({ Item }: PostCardProps) => {
                 marginBottom: "0.5rem",
               }}
             >
-              <FcLikePlaceholder size={25} />
+              <FcLike size={25} />
             </p>
             <p className={Classes.post_card__footer__count}>{likes || 0}</p>
           </div>
@@ -115,7 +118,11 @@ const PostCard = ({ Item }: PostCardProps) => {
         </div>
         <div className={Classes.post_card__footer__right}>
           {downloads && (
-            <div className={Classes.post_card__footer__section}>
+            <a
+              className={Classes.post_card__footer__section}
+              href={`${download}?force=true`}
+              target="_blank"
+            >
               <p
                 className={Classes.post_card__footer__icon}
                 style={{
@@ -127,7 +134,7 @@ const PostCard = ({ Item }: PostCardProps) => {
               <p className={Classes.post_card__footer__count}>
                 {downloads || 0}
               </p>
-            </div>
+            </a>
           )}
         </div>
       </div>

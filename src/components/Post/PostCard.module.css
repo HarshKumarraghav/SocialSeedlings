@@ -66,6 +66,7 @@
   align-items: center;
 }
 .post_card__footer__section {
+  text-decoration: none;
   display: flex;
   gap: 10px;
   align-items: center;
