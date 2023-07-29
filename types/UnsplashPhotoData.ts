@@ -16,6 +16,7 @@ export interface UnsplashPhotoData {
   urls: UrlsData;
   links: LinksData;
   user: UserData;
+  views: number;
 }
 
 export interface ExifData {

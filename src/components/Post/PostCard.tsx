@@ -5,7 +5,7 @@ import Classes from "./PostCard.module.css";
 import { useRouter } from "next/navigation";
 import { BiSolidPhotoAlbum } from "react-icons/bi";
 import useReadableTime from "@/hooks/useReadableTime";
-import { AiOutlineCloudDownload } from "react-icons/ai";
+import { AiFillEye, AiOutlineCloudDownload } from "react-icons/ai";
 import { FcLikePlaceholder, FcLike } from "react-icons/fc";
 import ImageComponent from "../ImageComponent/ImageComponent";
 import { UnsplashPhotoData } from "../../../types/UnsplashPhotoData";
@@ -13,22 +13,14 @@ type PostCardProps = {
   Item: UnsplashPhotoData;
 };
 const PostCard = ({ Item }: PostCardProps) => {
-  console.log("Item", Item);
-
   const Router = useRouter();
+  console.log("Item", Item);
   // userinfo
-  const {
-    name,
-    total_likes,
-    total_photos,
-    location,
-    username,
-    for_hire,
-    profile_image,
-  } = Item.user;
+  const { name, total_photos, location, username, for_hire, profile_image } =
+    Item.user;
   // image
   const { full, regular } = Item.urls;
-  const { downloads, created_at, blur_hash } = Item;
+  const { views, likes, downloads, created_at, blur_hash } = Item;
   return (
     <div className={Classes.post_card}>
       <div className={Classes.post_card__header}>
@@ -83,6 +75,19 @@ const PostCard = ({ Item }: PostCardProps) => {
       </div>
       <div className={Classes.post_card__footer}>
         <div className={Classes.post_card__footer__left}>
+          {views && (
+            <div className={Classes.post_card__footer__section}>
+              <p
+                className={Classes.post_card__footer__left__like__icon}
+                style={{
+                  marginBottom: "0.5rem",
+                }}
+              >
+                <AiFillEye size={25} />
+              </p>
+              <p className={Classes.post_card__footer__count}>{views || 0}</p>
+            </div>
+          )}
           <div className={Classes.post_card__footer__section}>
             <p
               className={Classes.post_card__footer__left__like__icon}
@@ -92,9 +97,7 @@ const PostCard = ({ Item }: PostCardProps) => {
             >
               <FcLikePlaceholder size={25} />
             </p>
-            <p className={Classes.post_card__footer__count}>
-              {total_likes || 0}
-            </p>
+            <p className={Classes.post_card__footer__count}>{likes || 0}</p>
           </div>
           <div className={Classes.post_card__footer__section}>
             <p
@@ -111,17 +114,21 @@ const PostCard = ({ Item }: PostCardProps) => {
           </div>
         </div>
         <div className={Classes.post_card__footer__right}>
-          <div className={Classes.post_card__footer__section}>
-            <p
-              className={Classes.post_card__footer__icon}
-              style={{
-                marginTop: "0.4rem",
-              }}
-            >
-              <AiOutlineCloudDownload size={25} />
-            </p>
-            <p className={Classes.post_card__footer__count}>{downloads || 0}</p>
-          </div>
+          {downloads && (
+            <div className={Classes.post_card__footer__section}>
+              <p
+                className={Classes.post_card__footer__icon}
+                style={{
+                  marginTop: "0.4rem",
+                }}
+              >
+                <AiOutlineCloudDownload size={25} />
+              </p>
+              <p className={Classes.post_card__footer__count}>
+                {downloads || 0}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
