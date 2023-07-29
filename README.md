@@ -2,6 +2,10 @@
 
 **Social Seedlings** is an innovative and immersive social media application designed for the meta universe, offering users a seamless and captivating online experience. With its cutting-edge features,**Social Seedlings** stands out as a pioneer in the world of virtual social networking.
 
+# Visit Social Seedlings:
+
+https://social-seedlings.vercel.app
+
 ## Video Demo
 
 https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/d7ae133d-e686-41f9-bcdb-ffb08e752d24
@@ -15,36 +19,13 @@ https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/d7ae133d-e68
 
 </div>
 
-![Social Seedlings](public/assets/Social Seedlings-poster.png)
+## Home Page
 
-## Why Social Seedlings?
+![Social Seedlings](public/Posters/poster1.png)
 
-### Comprehensive Information:
+## Profile Page
 
-**Social Seedlings** stands out as a reliable and comprehensive source of information for cryptocurrencies. With details on over 200 cryptocurrencies and 50 country currencies, users can access a wide range of data to make informed decisions. Having all the relevant information in one place saves users time and effort in searching multiple platforms for the data they need.
-
-### User-Friendly Interface:
-
-**Social Seedlings** prioritizes user experience with its intuitive and user-friendly interface. Navigating through the application is seamless, allowing users to access the desired information quickly. The clean design and logical layout make it accessible for users of all levels of expertise, including both beginners and experienced investors.
-
-## 📌 Description
-
-**Social Seedlings** serves as a comprehensive and user-centric web application for all things cryptocurrency-related. With its extensive cryptocurrency database, currency converter, interactive charts, cryptocurrency news section, portfolio tracking, and personalized recommendations, Social Seedlings offers a holistic experience to crypto enthusiasts and investors. By consolidating essential tools and information into a single platform, Social Seedlings simplifies the process of navigating the complex world of cryptocurrencies and empowers users to make informed decisions for their financial success.
-
-## ✨ Features
-
-- 📚 **Extensive Cryptocurrency Database:** Explore over 200 cryptocurrencies and gain valuable insights into their profiles and metrics.
-- 💱 **Currency Converter:** Seamlessly convert between 50 different country currencies for easy analysis and decision-making.
-- 📊 **Interactive Charts:** Visualize historical price movements and identify trends and trading opportunities.
-- 📰 **Cryptocurrency News:** Stay updated with breaking news, market updates, and regulatory developments in the crypto world.
-- 📈 **Portfolio Tracking:** Monitor your cryptocurrency investments in real-time, track profits and losses, and set custom alerts.
-- 🤖 **Personalized Recommendations:** Discover new cryptocurrencies, news articles, and investment opportunities tailored to your interests.
-- 🌍 **User-Friendly Interface:** Enjoy a clean and intuitive interface designed for both beginners and experienced users.
-- 🔒 **Trust and Reliability:** Access accurate data sourced from reputable and verified sources, building trust in your decision-making.
-- 📱 **Mobile Compatibility:** Access Social Seedlings on the go with a mobile-friendly design for convenience and flexibility.
-- 💡**Educational Resources:** Access educational materials and resources to enhance your understanding of cryptocurrencies and blockchain technology.
-
----
+![Social Seedlings](public/Posters/poster2.png)
 
 ## 🛠️ Tech Stack Used in Social Seedlings:
 
@@ -59,7 +40,7 @@ https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/d7ae133d-e68
 ### Install Repository
 
 ```git
-git clone https://github.com/HarshKumarraghav/Social Seedlings.git
+git clone https://github.com/HarshKumarraghav/SocialSeedlings.git
 ```
 
 ### Run Project
@@ -81,5 +62,5 @@ yarn run dev
 ### Finish
 
 ```
-Your project is running on https://localhost:5173.
+Your project is running on https://localhost:300.
 ```
