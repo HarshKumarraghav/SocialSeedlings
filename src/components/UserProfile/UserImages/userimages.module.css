@@ -103,6 +103,9 @@
   .UserImage_container__heading {
     font-size: 25px;
   }
+  .Details_ViewToggle {
+    margin-top: 80px;
+  }
 }
 .Details__button_Text {
   display: flex;

@@ -6,10 +6,13 @@ import Image from "next/image";
 import { BiLocationPlus, BiSolidPhotoAlbum } from "react-icons/bi";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiOutlineCloudDownload, AiOutlineGlobal } from "react-icons/ai";
+import { RiUserFollowFill } from "react-icons/ri";
 import Loader from "@/components/Loader/Loader";
 import { FcLike } from "react-icons/fc";
 const UserInfo = () => {
   const { userDetail } = useUserDetailProvider();
+  console.log(userDetail);
+
   return (
     <div className={Classes.Details}>
       {!userDetail && <Loader />}
@@ -45,6 +48,59 @@ const UserInfo = () => {
               {userDetail?.location || "Earth"}
             </p>
           </div>
+          <div className={Classes.details__footer}>
+            <div className={Classes.details__footer__section__follow}>
+              <p>Followers</p>
+              <p>{userDetail?.followers_count || 0}</p>
+            </div>
+            <div className={Classes.details__footer__section__follow}>
+              <p>Following</p>
+              <p>{userDetail?.following_count || 0}</p>
+            </div>
+          </div>
+          <div className={Classes.details__footer}>
+            <div className={Classes.details__footers}>
+              <div className={Classes.details__footer__section}>
+                <p
+                  className={Classes.details__footer__like__icon}
+                  style={{
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  <FcLike size={25} />
+                </p>
+                <p className={Classes.details__footer__count}>
+                  {userDetail?.total_likes || 0}
+                </p>
+              </div>
+              <div className={Classes.details__footer__section}>
+                <p
+                  className={Classes.details__footer__comment__icon}
+                  style={{
+                    marginTop: "0.4rem",
+                  }}
+                >
+                  <BiSolidPhotoAlbum size={25} />
+                </p>
+                <p className={Classes.details__footer__count}>
+                  {userDetail?.total_photos || 0}
+                </p>
+              </div>
+              <div className={Classes.details__footer__section}>
+                <p
+                  className={Classes.details__footer__icon}
+                  style={{
+                    marginTop: "0.4rem",
+                  }}
+                >
+                  <AiOutlineCloudDownload size={25} />
+                </p>
+                <p className={Classes.details__footer__count}>
+                  {userDetail?.downloads || 0}
+                </p>
+              </div>
+            </div>
+          </div>
           <div className={Classes.Details__other__info}>
             <div className={Classes.Details__other__tags}>
               {userDetail?.tags?.custom?.map((tags: any, i: any) => (
@@ -53,6 +109,7 @@ const UserInfo = () => {
                 </div>
               ))}
             </div>
+
             <div className={Classes.Socials}>
               <a
                 target="_blank"
@@ -78,49 +135,6 @@ const UserInfo = () => {
               >
                 <AiOutlineGlobal size={20} />
               </a>
-            </div>
-            <div className={Classes.details__footer}>
-              <div className={Classes.details__footers}>
-                <div className={Classes.details__footer__section}>
-                  <p
-                    className={Classes.details__footer__like__icon}
-                    style={{
-                      marginBottom: "0.5rem",
-                    }}
-                  >
-                    <FcLike size={25} />
-                  </p>
-                  <p className={Classes.details__footer__count}>
-                    {userDetail?.total_likes || 0}
-                  </p>
-                </div>
-                <div className={Classes.details__footer__section}>
-                  <p
-                    className={Classes.details__footer__comment__icon}
-                    style={{
-                      marginTop: "0.4rem",
-                    }}
-                  >
-                    <BiSolidPhotoAlbum size={25} />
-                  </p>
-                  <p className={Classes.details__footer__count}>
-                    {userDetail?.total_photos || 0}
-                  </p>
-                </div>
-                <div className={Classes.details__footer__section}>
-                  <p
-                    className={Classes.details__footer__icon}
-                    style={{
-                      marginTop: "0.4rem",
-                    }}
-                  >
-                    <AiOutlineCloudDownload size={25} />
-                  </p>
-                  <p className={Classes.details__footer__count}>
-                    {userDetail?.downloads || 0}
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -75,8 +75,8 @@
   flex-wrap: wrap;
 }
 .Details__other__tag {
-  background-color: #00d09c;
-  padding: 0.2rem;
+  background-color: black;
+  padding: 0.5rem;
   border-radius: 12px;
   color: white;
 }
@@ -121,7 +121,6 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 20px;
 }
 
 .details__footer__section {
@@ -130,7 +129,6 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 20px;
 }
 
 .details__footer__like__icon {
@@ -141,4 +139,19 @@
 .details__footer__count {
   font-size: 12px;
   font-weight: bold;
+}
+
+.details__footer__section__follow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00d09c;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
 }
