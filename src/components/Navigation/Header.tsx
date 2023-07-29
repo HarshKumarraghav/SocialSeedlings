@@ -3,6 +3,7 @@ import React from "react";
 import Classes from "./Header.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import ThemeSwitcher from "../Theme/ThemeSwitcher";
 const Header = () => {
   const Router = useRouter();
   return (
@@ -25,6 +26,7 @@ const Header = () => {
         />
         <h1 className={Classes.logo_heading}>SocialSeedlings</h1>
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

@@ -4,10 +4,11 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  justify-content: space-between;
   border-bottom: hsl(214.3 31.8% 91.4%) 1px solid;
-  background: hsla(0, 0%, 100%, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(3px);
+}
+[data-theme="dark"] .Navbar {
+  border-bottom: hsl(214.3 31.8% 8.4%) 1px solid;
 }
 .Navbar__logo {
   height: 40px;
