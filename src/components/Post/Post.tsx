@@ -7,6 +7,9 @@ import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
 
 const Post = () => {
+  /* The code is using the `useInfiniteFetch` custom hook to destructure and assign the returned values
+to the variables `data`, `isLoading`, `isError`, `error`, `hasNextPage`, `isFetchingNextPage`, and
+`fetchNextPage`. */
   const {
     data,
     isLoading,
@@ -16,13 +19,20 @@ const Post = () => {
     isFetchingNextPage,
     fetchNextPage,
   } = useInfiniteFetch();
+  /*  The line `const lastPostRef = useRef<HTMLDivElement>(null);` is creating a ref object using the
+`useRef` hook. The ref object is initialized with a value of `null` and is assigned a type of
+`HTMLDivElement`. */
   const lastPostRef = useRef<HTMLDivElement>(null);
 
+  /* The code is using the `useIntersection` hook from the `@mantine/hooks` library to create a reference
+(`ref`) and an intersection entry (`entry`). */
   const { ref, entry } = useIntersection({
     root: lastPostRef.current,
     threshold: 1,
   });
 
+  /* The `useEffect` hook is used to perform side effects in a React component. In this case, the effect
+ is triggered whenever the values of `hasNextPage`, `isFetchingNextPage`, or `entry` change. */
   useEffect(() => {
     if (entry?.isIntersecting && hasNextPage && !isFetchingNextPage) {
       fetchNextPage();

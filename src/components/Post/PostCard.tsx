@@ -4,7 +4,7 @@ import Image from "next/image";
 import Classes from "./PostCard.module.css";
 import { useRouter } from "next/navigation";
 import { BiSolidPhotoAlbum } from "react-icons/bi";
-import useReadableTime from "@/hooks/useReadableTime";
+import { useReadableTime } from "@/hooks/useReadableTime";
 import { AiFillEye, AiOutlineCloudDownload } from "react-icons/ai";
 import { FcLike } from "react-icons/fc";
 import ImageComponent from "../ImageComponent/ImageComponent";

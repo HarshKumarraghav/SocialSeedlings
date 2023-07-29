@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
 import moment from "moment";
 
-const useReadableTime = (originalDate: string) => {
+/**
+ * The useReadableTime function takes in a date string and returns a formatted date string in the
+ * format "MMMM Do".
+ * @param {string} originalDate - The `originalDate` parameter is a string representing a date in a
+ * specific format.
+ * @returns The `readableDate` variable is being returned.
+ */
+export const useReadableTime = (originalDate: string) => {
   const [readableDate, setReadableDate] = useState("");
 
   useEffect(() => {
@@ -13,5 +20,3 @@ const useReadableTime = (originalDate: string) => {
 
   return readableDate;
 };
-
-export default useReadableTime;
