@@ -18,8 +18,8 @@ const UserInfo = () => {
           <div className={Classes.Details__header}>
             <Image
               className={Classes.Details__header__profilePic}
-              src={userDetail?.profile_image?.large}
-              alt={userDetail?.username}
+              src={userDetail?.profile_image?.large || "/images/icons/user.png"}
+              alt={userDetail?.username || "john doe"}
               width={200}
               height={200}
             />
@@ -29,7 +29,7 @@ const UserInfo = () => {
               <span className={Classes.Details__header__greentick}>
                 {userDetail?.for_hire && (
                   <Image
-                    alt={userDetail?.username}
+                    alt={userDetail?.username || "john doe"}
                     width={15}
                     height={15}
                     src={"/images/icons/greentick.png"}
