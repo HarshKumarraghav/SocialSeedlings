@@ -14,7 +14,7 @@ interface Props {
 
 const UserImages = ({ UserPhotos }: Props) => {
   const { data, isLoading, isError, error } = UserPhotos;
-  const [isGridView, setIsGridView] = useState(true);
+  const [isGridView, setIsGridView] = useState(false);
 
   const toggleView = () => {
     setIsGridView((prev) => !prev);

@@ -1,6 +1,6 @@
 "use client";
+import PageLoader from "@/components/Loader/PageLoader";
 import React from "react";
-import Loader from "@/components/Loader/Loader";
 const loading = () => {
   return (
     <div
@@ -11,7 +11,7 @@ const loading = () => {
         height: "100vh",
       }}
     >
-      <Loader />
+      <PageLoader />
     </div>
   );
 };
