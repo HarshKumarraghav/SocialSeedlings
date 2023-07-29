@@ -6,7 +6,6 @@ import { useUserFetch } from "@/hooks/useUserFetch";
 import UserInfo from "./UserInfo/UserInfo";
 import UserImages from "./UserImages/UserImages";
 import { useUserPhotos } from "@/hooks/useUserPhotos";
-import Loader from "../Loader/Loader";
 import Error from "../Error/Error";
 
 interface Props {

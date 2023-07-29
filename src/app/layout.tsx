@@ -5,6 +5,9 @@ import Providers from "./provider";
 export const metadata: Metadata = {
   title: "Social Seedlings",
   description: "Social Seedlings is a social media platform for the metaverse.",
+  icons: {
+    icon: "/images/metagram.png",
+  },
 };
 
 export default function RootLayout({

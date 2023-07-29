@@ -6,6 +6,7 @@
   padding: 0 1rem;
   justify-content: space-between;
   border-bottom: hsl(214.3 31.8% 91.4%) 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 [data-theme="dark"] .Navbar {
   border-bottom: hsl(214.3 31.8% 8.4%) 1px solid;

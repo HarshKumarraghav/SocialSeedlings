@@ -19,7 +19,6 @@ const PageLoader = () => {
         ariaLabel="ball-triangle-loading"
         visible={true}
       />
-      ;
     </div>
   );
 };
