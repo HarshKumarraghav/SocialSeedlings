@@ -86,3 +86,16 @@
   gap: 10px;
   align-items: center;
 }
+
+.post_image_container {
+  width: 500px;
+  height: 380px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .post_image_container {
+    width: 333px;
+    height: 333px;
+    object-fit: cover;
+  }
+}

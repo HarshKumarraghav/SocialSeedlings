@@ -76,9 +76,9 @@ const PostCard = ({ Item }: PostCardProps) => {
       prop set to either the `full` or `regular` property of the `Item.urls`
       object. The `alt` prop is set to "Post" and the `hash` prop is set to the
       `blur_hash` property of the `Item` object. */}
-
-      <ImageComponent src={full || regular} alt="Post" hash={blur_hash} />
-
+      <div className={Classes.post_image_container}>
+        <ImageComponent src={full || regular} alt="Post" hash={blur_hash} />
+      </div>
       <div className={Classes.post_card__footer}>
         <div className={Classes.post_card__footer__left}>
           <div className={Classes.post_card__footer__section}>
