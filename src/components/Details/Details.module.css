@@ -9,6 +9,9 @@
   padding: 0 1rem;
   border-left: hsl(214.3 31.8% 91.4%) 1px solid;
 }
+[data-theme="dark"] .Details {
+  border-left: hsl(214.3 31.8% 8.4%) 1px solid;
+}
 .Details__heading {
   font-size: 2rem;
   font-weight: 600;

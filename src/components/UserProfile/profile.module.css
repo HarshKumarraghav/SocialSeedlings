@@ -17,6 +17,9 @@
   border-right: hsl(214.3 31.8% 91.4%) 1px solid;
   transition: transform 0.3s ease-in-out;
 }
+[data-theme="dark"] .mainSection {
+  border-right: hsl(214.3 31.8% 8.4%) 1px solid;
+}
 .RightSidebar {
   width: 60%;
   height: 100%;

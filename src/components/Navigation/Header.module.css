@@ -9,6 +9,7 @@
 }
 [data-theme="dark"] .Navbar {
   border-bottom: hsl(214.3 31.8% 8.4%) 1px solid;
+  background-color: hsl(214.3 31.8% 8.4%);
 }
 .Navbar__logo {
   height: 40px;

@@ -8,6 +8,9 @@
   width: 100%;
   z-index: 100;
 }
+[data-theme="dark"] .Sidebar {
+  border-right: hsl(214.3 31.8% 8.4%) 1px solid;
+}
 
 .sidebarItem {
   width: 90%;
@@ -51,6 +54,10 @@
     border-right: none;
     border-top: hsl(214.3 31.8% 91.4%) 1px solid;
     background-color: white;
+  }
+  [data-theme="dark"] .Sidebar {
+    border-top: hsl(214.3 31.8% 8.4%) 1px solid;
+    background-color: hsl(214.3 31.8% 8.4%);
   }
   .sidebarItem {
     display: flex;
