@@ -6,18 +6,21 @@ import { UnsplashPhotoData } from "../../../../types/UnsplashPhotoData";
 import PostCard from "@/components/Post/PostCard";
 import { FaListUl } from "react-icons/fa";
 import { BsFillGridFill } from "react-icons/bs";
+import Error from "@/components/Error/Error";
+
 interface Props {
   UserPhotos: any;
 }
 
 const UserImages = ({ UserPhotos }: Props) => {
-  const { data, isLoading } = UserPhotos;
+  const { data, isLoading, isError, error } = UserPhotos;
   const [isGridView, setIsGridView] = useState(true);
 
   const toggleView = () => {
     setIsGridView((prev) => !prev);
   };
   if (isLoading) return <Loader />;
+  if (isError) return <Error error={error} />;
   return (
     <div className={Classes.Details}>
       {data && (

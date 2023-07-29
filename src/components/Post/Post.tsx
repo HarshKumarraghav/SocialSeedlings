@@ -4,10 +4,18 @@ import React, { useEffect, useRef } from "react";
 import PostCard from "./PostCard";
 import { UnsplashPhotoData } from "../../../types/UnsplashPhotoData";
 import Loader from "../Loader/Loader";
+import Error from "../Error/Error";
 
 const Post = () => {
-  const { data, isLoading, hasNextPage, isFetchingNextPage, fetchNextPage } =
-    useInfiniteFetch();
+  const {
+    data,
+    isLoading,
+    isError,
+    error,
+    hasNextPage,
+    isFetchingNextPage,
+    fetchNextPage,
+  } = useInfiniteFetch();
   const lastPostRef = useRef<HTMLDivElement>(null);
 
   const { ref, entry } = useIntersection({
@@ -22,7 +30,7 @@ const Post = () => {
   }, [hasNextPage, isFetchingNextPage, entry]);
 
   if (isLoading) return <Loader />;
-
+  if (isError) return <Error error={error} />;
   return (
     <div>
       {data?.pages.map((group, i) => (

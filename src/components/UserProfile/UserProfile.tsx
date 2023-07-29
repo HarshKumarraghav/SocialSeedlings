@@ -6,20 +6,31 @@ import { useUserFetch } from "@/hooks/useUserFetch";
 import UserInfo from "./UserInfo/UserInfo";
 import UserImages from "./UserImages/UserImages";
 import { useUserPhotos } from "@/hooks/useUserPhotos";
+import Loader from "../Loader/Loader";
+import Error from "../Error/Error";
 
 interface Props {
   UserName: string;
 }
 
 const UserProfile = ({ UserName }: Props) => {
-  const { data, isLoading, error } = useUserFetch(UserName);
-  const { userDetail, setUserDetail } = useUserDetailProvider();
-  const UserPhotos = useUserPhotos(UserName);
-  console.log("UserPhotos.data", UserPhotos.data);
+  const { data, isLoading, error, isError } = useUserFetch(UserName);
+  const { setUserDetail } = useUserDetailProvider();
 
+  /* The line `const UserPhotos = useUserPhotos(UserName);` is calling the `useUserPhotos` custom hook
+and passing the `UserName` as an argument. This hook is responsible for fetching and returning the
+user's photos based on their username. The `UserPhotos` variable will hold the returned data from
+the hook, which can then be used in the component to display the user's images. */
+  const UserPhotos = useUserPhotos(UserName);
+
+  /* The `useEffect` hook is used to perform side effects in functional components. In this case, the
+`useEffect` hook is used to update the `userDetail` state in the `useUserDetailProvider` custom hook
+whenever the `data` variable changes. */
   useEffect(() => {
     setUserDetail(data);
   }, [data]);
+
+  if (isError) return <Error error={error} />;
   return (
     <div className={Classes.Container}>
       <div className={Classes.sidebar}>

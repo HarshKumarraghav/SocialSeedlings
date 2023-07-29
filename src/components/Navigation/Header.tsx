@@ -2,10 +2,20 @@
 import React from "react";
 import Classes from "./Header.module.css";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 const Header = () => {
+  const Router = useRouter();
   return (
     <div className={Classes.Navbar}>
-      <div className={Classes.Navbar__logo}>
+      <div
+        className={Classes.Navbar__logo}
+        style={{
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          Router.push(`/`);
+        }}
+      >
         <Image
           width={100}
           height={100}
