@@ -11,7 +11,8 @@
   align-items: center;
   flex-direction: column;
   align-items: center;
-  height: 340px;
+  height: 380px;
+  padding-bottom: 20px;
   border-bottom: hsl(214.3 31.8% 91.4%) 1px solid;
 }
 [data-theme="dark"] .Details__header {
@@ -64,6 +65,7 @@
 }
 
 .Details__other__tags {
+  margin-top: 20px;
   width: 100%;
   justify-content: center;
   font-size: 12px;

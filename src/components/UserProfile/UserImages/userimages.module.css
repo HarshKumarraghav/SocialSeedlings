@@ -39,9 +39,7 @@
 
 .UserImage_container__heading {
   font-size: 40px;
-  text-align: center;
   font-weight: bold;
-  margin: 0 auto;
   width: 100%;
   padding: 1rem;
 }
@@ -101,6 +99,9 @@
   }
   .Details__Hover_Text {
     display: block;
+  }
+  .UserImage_container__heading {
+    font-size: 25px;
   }
 }
 .Details__button_Text {
