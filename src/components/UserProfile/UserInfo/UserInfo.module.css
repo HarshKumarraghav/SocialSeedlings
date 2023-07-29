@@ -6,7 +6,9 @@
 }
 .Details__header {
   width: 100%;
+
   display: flex;
+  align-items: center;
   flex-direction: column;
   align-items: center;
   height: 340px;
@@ -53,6 +55,7 @@
   gap: 0.3rem;
   text-align: center;
   font-size: 12px;
+  font-weight: bold;
 }
 
 .Details__other__tags {

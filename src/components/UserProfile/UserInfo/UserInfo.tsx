@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useUserDetailProvider } from "@/hooks/useUserDetailProvider";
 import Classes from "./UserInfo.module.css";
@@ -5,13 +6,13 @@ import Image from "next/image";
 import { BiLocationPlus, BiSolidPhotoAlbum } from "react-icons/bi";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiOutlineCloudDownload, AiOutlineGlobal } from "react-icons/ai";
-import Link from "next/link";
 import Loader from "@/components/Loader/Loader";
 import { FcLike } from "react-icons/fc";
 const UserInfo = () => {
   const { userDetail } = useUserDetailProvider();
   return (
     <div className={Classes.Details}>
+      {!userDetail && <Loader />}
       {userDetail && (
         <div>
           <div className={Classes.Details__header}>
