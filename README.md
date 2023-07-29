@@ -2,6 +2,10 @@
 
 **Social Seedlings** is an innovative and immersive social media application designed for the meta universe, offering users a seamless and captivating online experience. With its cutting-edge features,**Social Seedlings** stands out as a pioneer in the world of virtual social networking.
 
+## Video Demo
+
+https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/d7ae133d-e686-41f9-bcdb-ffb08e752d24
+
 <p align="center">
 <img src="https://img.shields.io/badge/Author-@HarshKumarraghav-critical" />
 </p>
