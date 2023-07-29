@@ -20,7 +20,15 @@ const PostCard = ({ Item }: PostCardProps) => {
   // image
   const { full, regular } = Item.urls;
   // post info
-  const { views, likes, downloads, created_at, blur_hash } = Item;
+  const {
+    views,
+    likes,
+    downloads,
+    created_at,
+    blur_hash,
+    description,
+    alt_description,
+  } = Item;
   // download image Link
   const { download } = Item.links;
 
@@ -138,6 +146,9 @@ const PostCard = ({ Item }: PostCardProps) => {
           )}
         </div>
       </div>
+      <p className={Classes.Details__Hover_Text}>
+        {description || alt_description || "No Description!"}
+      </p>
     </div>
   );
 };

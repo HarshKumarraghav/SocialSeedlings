@@ -11,10 +11,10 @@ import Error from "@/components/Error/Error";
 interface Props {
   UserPhotos: any;
 }
-
 const UserImages = ({ UserPhotos }: Props) => {
   const { data, isLoading, isError, error } = UserPhotos;
   const [isGridView, setIsGridView] = useState(false);
+  console.log(data);
 
   const toggleView = () => {
     setIsGridView((prev) => !prev);
@@ -35,26 +35,12 @@ const UserImages = ({ UserPhotos }: Props) => {
               className={Classes.Details_toggle__button}
             >
               {isGridView ? (
-                <p
-                  style={{
-                    display: "flex",
-                    gap: "5px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <p className={Classes.Details__button_Text}>
                   <FaListUl />
                   List View
                 </p>
               ) : (
-                <p
-                  style={{
-                    display: "flex",
-                    gap: "5px",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
+                <p className={Classes.Details__button_Text}>
                   <BsFillGridFill />
                   Grid View
                 </p>
@@ -85,6 +71,11 @@ const UserImages = ({ UserPhotos }: Props) => {
                         src={item?.urls.full}
                         hash={item?.blur_hash}
                       />
+                      <p className={Classes.Details__Hover_Text}>
+                        {item?.description ||
+                          item?.alt_description ||
+                          "No Description!"}
+                      </p>
                     </React.Fragment>
                   </>
                 ) : (

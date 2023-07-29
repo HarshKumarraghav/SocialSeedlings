@@ -1,5 +1,6 @@
 /* CSS for the PostCard component */
 .post_card {
+  position: relative;
   border-radius: 10px;
   border: hsl(214.3 31.8% 91.4%) 1px solid;
   overflow: hidden;
@@ -102,6 +103,26 @@
   height: 380px;
   object-fit: cover;
 }
+
+.Details__Hover_Text {
+  text-align: center;
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  bottom: 60px;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+/* Show the paragraph when hovering over the parent div */
+.post_card:hover .Details__Hover_Text,
+.UserImage__List:hover .Details__Hover_Text {
+  display: block;
+  transition: 0.5s ease;
+}
+
 @media (max-width: 767px) {
   .post_image_container {
     width: 333px;

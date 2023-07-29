@@ -10,6 +10,7 @@ export interface UnsplashPhotoData {
   likes: number;
   liked_by_user: boolean;
   description: string;
+  alt_description: string;
   exif: ExifData;
   location: LocationData;
   current_user_collections: CollectionData[];

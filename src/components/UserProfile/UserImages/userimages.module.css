@@ -29,6 +29,7 @@
 }
 
 .UserImage__Square {
+  position: relative;
   width: 240px;
   height: 240px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -71,6 +72,24 @@
   font-size: 16px;
   cursor: pointer;
 }
+.Details__Hover_Text {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  bottom: 0;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+
+/* Show the paragraph when hovering over the parent div */
+.UserImage__Square:hover .Details__Hover_Text,
+.UserImage__List:hover .Details__Hover_Text {
+  display: block;
+  transition: 0.5s ease;
+}
 
 @media (max-width: 767px) {
   .UserImage__Square {
@@ -80,4 +99,10 @@
     display: flex;
     justify-content: center;
   }
+}
+.Details__button_Text {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
