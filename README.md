@@ -1,6 +1,6 @@
-### [Cryptoverse](https://cryptoapiappreact.netlify.app/)
+### [Social Seedlings](https://social-seedlings.vercel.app/)
 
-**Cryptoverse** is an innovative and user-friendly web application designed to cater to cryptocurrency enthusiasts and investors alike. With a vast database comprising details of over 200 cryptocurrencies and information on 50 different country currencies, Cryptoverse offers a one-stop platform for all your cryptocurrency-related needs. Whether you are a beginner exploring the world of digital assets or an experienced investor seeking in-depth analysis and real-time data, **Cryptoverse** has you covered.
+**Social Seedlings** is an innovative and immersive social media application designed for the meta universe, offering users a seamless and captivating online experience. With its cutting-edge features,**Social Seedlings** stands out as a pioneer in the world of virtual social networking.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Author-@HarshKumarraghav-critical" />
@@ -11,21 +11,21 @@
 
 </div>
 
-![Cryptoverse](public/assets/cryptoverse-poster.png)
+![Social Seedlings](public/assets/Social Seedlings-poster.png)
 
-## Why Cryptoverse?
+## Why Social Seedlings?
 
 ### Comprehensive Information:
 
-**Cryptoverse** stands out as a reliable and comprehensive source of information for cryptocurrencies. With details on over 200 cryptocurrencies and 50 country currencies, users can access a wide range of data to make informed decisions. Having all the relevant information in one place saves users time and effort in searching multiple platforms for the data they need.
+**Social Seedlings** stands out as a reliable and comprehensive source of information for cryptocurrencies. With details on over 200 cryptocurrencies and 50 country currencies, users can access a wide range of data to make informed decisions. Having all the relevant information in one place saves users time and effort in searching multiple platforms for the data they need.
 
 ### User-Friendly Interface:
 
-**Cryptoverse** prioritizes user experience with its intuitive and user-friendly interface. Navigating through the application is seamless, allowing users to access the desired information quickly. The clean design and logical layout make it accessible for users of all levels of expertise, including both beginners and experienced investors.
+**Social Seedlings** prioritizes user experience with its intuitive and user-friendly interface. Navigating through the application is seamless, allowing users to access the desired information quickly. The clean design and logical layout make it accessible for users of all levels of expertise, including both beginners and experienced investors.
 
 ## 📌 Description
 
-**Cryptoverse** serves as a comprehensive and user-centric web application for all things cryptocurrency-related. With its extensive cryptocurrency database, currency converter, interactive charts, cryptocurrency news section, portfolio tracking, and personalized recommendations, Cryptoverse offers a holistic experience to crypto enthusiasts and investors. By consolidating essential tools and information into a single platform, Cryptoverse simplifies the process of navigating the complex world of cryptocurrencies and empowers users to make informed decisions for their financial success.
+**Social Seedlings** serves as a comprehensive and user-centric web application for all things cryptocurrency-related. With its extensive cryptocurrency database, currency converter, interactive charts, cryptocurrency news section, portfolio tracking, and personalized recommendations, Social Seedlings offers a holistic experience to crypto enthusiasts and investors. By consolidating essential tools and information into a single platform, Social Seedlings simplifies the process of navigating the complex world of cryptocurrencies and empowers users to make informed decisions for their financial success.
 
 ## ✨ Features
 
@@ -37,18 +37,16 @@
 - 🤖 **Personalized Recommendations:** Discover new cryptocurrencies, news articles, and investment opportunities tailored to your interests.
 - 🌍 **User-Friendly Interface:** Enjoy a clean and intuitive interface designed for both beginners and experienced users.
 - 🔒 **Trust and Reliability:** Access accurate data sourced from reputable and verified sources, building trust in your decision-making.
-- 📱 **Mobile Compatibility:** Access Cryptoverse on the go with a mobile-friendly design for convenience and flexibility.
+- 📱 **Mobile Compatibility:** Access Social Seedlings on the go with a mobile-friendly design for convenience and flexibility.
 - 💡**Educational Resources:** Access educational materials and resources to enhance your understanding of cryptocurrencies and blockchain technology.
 
 ---
 
-## 🛠️ Tech Stack Used in Cryptoverse:
+## 🛠️ Tech Stack Used in Social Seedlings:
 
-- **React.js:** A popular JavaScript library for building user interfaces, providing a fast and responsive application.
-- **Tailwind CSS:** A utility-first CSS framework that enables rapid development with customizable and reusable UI components.
-- **CoinGecko API:** Integrated to fetch cryptocurrency data, including details, market cap, and historical information.
-- **Bing News API:** Utilized to gather the latest cryptocurrency news and provide up-to-date information to users.
-- **Shcadcn UI:** A design system used for creating a consistent and visually appealing user interface throughout the application.
+- **NextJS 13:** A popular JavaScript library for building user interfaces, providing a fast and responsive application.
+- **React-Query:** Powerful asynchronous state management for TS/JS, React.
+- **Unsplash API:** The most powerful photo engine in the world.
 
 ---
 
@@ -57,7 +55,7 @@
 ### Install Repository
 
 ```git
-git clone https://github.com/HarshKumarraghav/Cryptoverse.git
+git clone https://github.com/HarshKumarraghav/Social Seedlings.git
 ```
 
 ### Run Project
