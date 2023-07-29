@@ -13,6 +13,8 @@ type PostCardProps = {
   Item: UnsplashPhotoData;
 };
 const PostCard = ({ Item }: PostCardProps) => {
+  console.log("Item", Item);
+
   const Router = useRouter();
   // userinfo
   const {
@@ -52,7 +54,7 @@ const PostCard = ({ Item }: PostCardProps) => {
               <span className={Classes.post_card__header__greentick}>
                 {for_hire && (
                   <Image
-                    alt={name}
+                    alt={name || "john doe"}
                     width={15}
                     height={15}
                     src={"/images/icons/greentick.png"}

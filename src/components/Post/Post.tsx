@@ -1,4 +1,3 @@
-"use client";
 import { useInfiniteFetch } from "@/hooks/useInfiniteFetch";
 import { useIntersection } from "@mantine/hooks";
 import React, { useEffect, useRef } from "react";
@@ -16,11 +15,11 @@ const Post = () => {
     threshold: 1,
   });
 
-  // useEffect(() => {
-  //   if (entry?.isIntersecting && hasNextPage && !isFetchingNextPage) {
-  //     fetchNextPage();
-  //   }
-  // }, [hasNextPage, isFetchingNextPage, entry]);
+  useEffect(() => {
+    if (entry?.isIntersecting && hasNextPage && !isFetchingNextPage) {
+      fetchNextPage();
+    }
+  }, [hasNextPage, isFetchingNextPage, entry]);
 
   if (isLoading) return <Loader />;
 
