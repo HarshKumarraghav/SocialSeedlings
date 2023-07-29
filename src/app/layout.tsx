@@ -1,7 +1,7 @@
 import QueryProvider from "@/Providers/QueryProvider";
 import "./globals.css";
 import type { Metadata } from "next";
-import Providers from "./provider";
+import ThemeProvider from "../Providers/Themeprovider";
 export const metadata: Metadata = {
   title: "Social Seedlings",
   description: "Social Seedlings is a social media platform for the metaverse.",
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <QueryProvider>
-          <Providers>{children}</Providers>
+          <ThemeProvider>{children}</ThemeProvider>
         </QueryProvider>
       </body>
     </html>
