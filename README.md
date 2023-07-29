@@ -62,5 +62,5 @@ yarn run dev
 ### Finish
 
 ```
-Your project is running on https://localhost:300.
+Your project is running on https://localhost:3000.
 ```
