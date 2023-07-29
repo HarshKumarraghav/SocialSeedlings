@@ -99,6 +99,9 @@
     display: flex;
     justify-content: center;
   }
+  .Details__Hover_Text {
+    display: block;
+  }
 }
 .Details__button_Text {
   display: flex;

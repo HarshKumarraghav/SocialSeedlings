@@ -129,4 +129,7 @@
     height: 333px;
     object-fit: cover;
   }
+  .Details__Hover_Text {
+    display: block;
+  }
 }
