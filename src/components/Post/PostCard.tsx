@@ -14,7 +14,6 @@ type PostCardProps = {
 };
 const PostCard = ({ Item }: PostCardProps) => {
   const Router = useRouter();
-  console.log("Item", Item);
   // userinfo
   const { name, total_photos, location, username, for_hire, profile_image } =
     Item.user;
@@ -24,6 +23,7 @@ const PostCard = ({ Item }: PostCardProps) => {
   const { views, likes, downloads, created_at, blur_hash } = Item;
   // download image Link
   const { download } = Item.links;
+
   return (
     <div className={Classes.post_card}>
       <div className={Classes.post_card__header}>
