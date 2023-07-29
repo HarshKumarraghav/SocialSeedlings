@@ -11,18 +11,25 @@
   transition: transform 0.3s ease-in-out;
 }
 .mainSection {
-  width: 80%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: center;
-  overflow-y: scroll;
+  border-right: hsl(214.3 31.8% 91.4%) 1px solid;
   transition: transform 0.3s ease-in-out;
 }
-
+.RightSidebar {
+  width: 60%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
 /* Styles for mobile screen */
 @media (max-width: 767px) {
   .Container {
-    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   .Container > div:nth-child(1) {
@@ -33,7 +40,11 @@
     height: 60px;
   }
 
+  .Container > div:nth-child(3) {
+    width: 100%;
+  }
   .Container > div:nth-child(2) {
     width: 100%;
+    height: 200px;
   }
 }

@@ -17,7 +17,6 @@ const Post = () => {
   });
 
   // useEffect(() => {
-  //   console.log("entry");
   //   if (entry?.isIntersecting && hasNextPage && !isFetchingNextPage) {
   //     fetchNextPage();
   //   }

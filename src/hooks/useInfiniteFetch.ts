@@ -3,8 +3,6 @@ import axios from "axios";
 import { UnsplashPhotoData } from "../../types/UnsplashPhotoData";
 const fetchPost = async (page: number) => {
   const CLIENT_ID = process.env.NEXT_PUBLIC_ACCESS_KEY;
-  console.log(CLIENT_ID);
-
   const { data } = await axios.get(
     `https://api.unsplash.com/photos/random/?client_id=${CLIENT_ID}&count=10&page=${page}`
   );

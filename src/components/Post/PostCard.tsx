@@ -27,7 +27,6 @@ const PostCard = ({ Item }: PostCardProps) => {
   // image
   const { full, regular } = Item.urls;
   const { downloads, created_at, blur_hash } = Item;
-  console.log(Item);
   return (
     <div className={Classes.post_card}>
       <div className={Classes.post_card__header}>
