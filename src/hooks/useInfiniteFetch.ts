@@ -18,6 +18,12 @@ const fetchPost = async (page: number) => {
   return data as UnsplashPhotoData[];
 };
 
+/**
+ * The `useInfiniteFetch` function is a custom hook that uses the `useInfiniteQuery` hook from the
+ * `react-query` library to fetch posts in an infinite scroll manner.
+ * @returns The `useInfiniteFetch` function is returning the result of calling the `useInfiniteQuery`
+ * hook.
+ */
 export const useInfiniteFetch = () => {
   return useInfiniteQuery({
     queryKey: ["posts"],
