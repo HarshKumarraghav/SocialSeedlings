@@ -11,7 +11,6 @@ import Loader from "@/components/Loader/Loader";
 import { FcLike } from "react-icons/fc";
 const UserInfo = () => {
   const { userDetail } = useUserDetailProvider();
-  console.log(userDetail);
 
   return (
     <div className={Classes.Details}>
