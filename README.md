@@ -1,8 +1,13 @@
 <p align="center">
-### [Social Seedlings](https://social-seedlings.vercel.app/)
-</p>
 
-![metagram](https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/7ea15705-6785-40c5-95f3-183cac18121d)
+### [Social Seedlings](https://social-seedlings.vercel.app/)
+
+</p>
+<p align="center">
+
+<img width="250" alt="poster1" src="https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/7ea15705-6785-40c5-95f3-183cac18121d">
+
+</p>
 
 **Social Seedlings** is an innovative and immersive social media application designed for the meta universe, offering users a seamless and captivating online experience. With its cutting-edge features,**Social Seedlings** stands out as a pioneer in the world of virtual social networking.
 
