@@ -12,7 +12,7 @@ import axios from "axios";
 export const useUserPhotos = (username: string) => {
   const CLIENT_ID = process.env.NEXT_PUBLIC_ACCESS_KEY;
   return useQuery({
-    queryKey: [username, "photos"],
+    queryKey: ["photos", username],
     queryFn: async () => {
       const { data } = await axios.get(
         `https://api.unsplash.com/users/${username}/photos/?client_id=${CLIENT_ID}&state=true`
