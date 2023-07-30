@@ -21,17 +21,17 @@ https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/d7ae133d-e68
 
 ## Home Page
 
-![Social Seedlings](public/Posters/poster1.png)
+<img width="1440" alt="poster1" src="https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/50415cf5-1463-43fc-a48c-326b31fa7a2d">
 
 ## Profile Page
 
-## Dark
-
-![Social Seedlings](public/Posters/poster3.png)
-
 ## Light
 
-![Social Seedlings](public/Posters/poster2.png)
+<img width="1440" alt="poster2" src="https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/ee8f496d-de49-43d2-b8b8-2f4ac40e274d">
+
+## Dark
+
+<img width="1440" alt="poster3" src="https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/10048ae7-61ea-4b51-99eb-c465c63a93b2">
 
 ## 🛠️ Tech Stack Used in Social Seedlings:
 
