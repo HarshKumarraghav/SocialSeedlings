@@ -1,11 +1,11 @@
 <p align="center">
 
-### [Social Seedlings](https://social-seedlings.vercel.app/)
+# [Social Seedlings](https://social-seedlings.vercel.app/)
 
 </p>
 <p align="center">
 
-<img width="250" alt="poster1" src="https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/7ea15705-6785-40c5-95f3-183cac18121d">
+<img width="150" alt="poster1" src="https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/7ea15705-6785-40c5-95f3-183cac18121d">
 
 </p>
 
