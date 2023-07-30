@@ -25,6 +25,12 @@ https://github.com/HarshKumarraghav/SocialSeedlings/assets/72187191/d7ae133d-e68
 
 ## Profile Page
 
+## Dark
+
+![Social Seedlings](public/Posters/poster3.png)
+
+## Light
+
 ![Social Seedlings](public/Posters/poster2.png)
 
 ## 🛠️ Tech Stack Used in Social Seedlings:
