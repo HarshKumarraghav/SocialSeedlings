@@ -13,9 +13,9 @@ interface Props {
 }
 
 const UserProfile = ({ UserName }: Props) => {
-  const { data, isLoading, error, isError } = useUserFetch(UserName);
-  const { setUserDetail } = useUserDetailProvider();
+  const { data, error, isError } = useUserFetch(UserName);
 
+  const { setUserDetail } = useUserDetailProvider();
   /* The line `const UserPhotos = useUserPhotos(UserName);` is calling the `useUserPhotos` custom hook
 and passing the `UserName` as an argument. This hook is responsible for fetching and returning the
 user's photos based on their username. The `UserPhotos` variable will hold the returned data from

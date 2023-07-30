@@ -9,9 +9,9 @@
 div {
   scroll-behavior: smooth;
 }
-div::-webkit-scrollbar {
+/* div::-webkit-scrollbar {
   display: none;
-}
+} */
 body {
   color: #000;
   background: #fff;
