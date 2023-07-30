@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import Sidebar from "../Navigation/Sidebar";
 import Classes from "./profile.module.css";
