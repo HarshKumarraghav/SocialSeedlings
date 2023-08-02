@@ -29,8 +29,8 @@ export const useInfiniteFetch = () => {
     queryKey: ["posts"],
     queryFn: ({ pageParam = 1 }) => fetchPost(pageParam),
     getNextPageParam: (_, allPages) => {
-      const maxPage = 20000 / 10;
-      if (allPages.length < maxPage) {
+      const lastPage = allPages[allPages.length - 1];
+      if (lastPage && lastPage.length > 0) {
         return allPages.length + 1;
       }
       return undefined;

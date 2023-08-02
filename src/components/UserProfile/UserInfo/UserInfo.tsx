@@ -20,7 +20,7 @@ const UserInfo = () => {
           <div className={Classes.Details__header}>
             <Image
               className={Classes.Details__header__profilePic}
-              src={userDetail?.profile_image?.large || "/images/icons/user.png"}
+              src={userDetail?.profile_image?.large || "/images/metagram.png"}
               alt={userDetail?.username || "john doe"}
               width={200}
               height={200}

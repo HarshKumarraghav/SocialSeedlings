@@ -30,7 +30,7 @@
 @media (max-width: 767px) {
   .Container {
     width: 100%;
-    min-height: 700vh;
+    min-height: 200vh;
     /* max-width: 2000vh; */
     display: flex;
     flex-direction: column;
@@ -43,10 +43,11 @@
     z-index: 10;
     height: 60px;
   }
-
-  .Container > div:nth-child(3) {
+  .RightSidebar {
     width: 100%;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-y: scroll;
+    transition: transform 0.3s ease-in-out;
   }
   .Container > div:nth-child(2) {
     width: 100%;

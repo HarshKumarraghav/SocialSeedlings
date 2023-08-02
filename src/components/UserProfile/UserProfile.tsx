@@ -21,7 +21,7 @@ const UserProfile = ({ UserName }: Props) => {
 and passing the `UserName` as an argument. This hook is responsible for fetching and returning the
 user's photos based on their username. The `UserPhotos` variable will hold the returned data from
 the hook, which can then be used in the component to display the user's images. */
-  const UserPhotos = useUserPhotos(UserName);
+  const UserPhotos = useUserPhotos(UserName, data?.total_photos);
 
   /* The `useEffect` hook is used to perform side effects in functional components. In this case, the
 `useEffect` hook is used to update the `userDetail` state in the `useUserDetailProvider` custom hook
