@@ -96,7 +96,9 @@ const PostCard = ({ Item }: PostCardProps) => {
               >
                 <AiFillEye size={25} />
               </p>
-              <p className={Classes.post_card__footer__count}>{views || 0}</p>
+              <p className={Classes.post_card__footer__count}>
+                {(views / 1000).toFixed(1) + "k" || 0}
+              </p>
             </div>
           )}
           <div className={Classes.post_card__footer__section}>
@@ -140,7 +142,7 @@ const PostCard = ({ Item }: PostCardProps) => {
                 <AiOutlineCloudDownload size={25} />
               </p>
               <p className={Classes.post_card__footer__count}>
-                {downloads || 0}
+                {(downloads / 1000).toFixed(1) + "k" || 0}
               </p>
             </a>
           )}

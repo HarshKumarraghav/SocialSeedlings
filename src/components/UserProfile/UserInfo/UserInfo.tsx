@@ -94,7 +94,7 @@ const UserInfo = () => {
                   <AiOutlineCloudDownload size={25} />
                 </p>
                 <p className={Classes.details__footer__count}>
-                  {userDetail?.downloads || 0}
+                  {(userDetail?.downloads / 1000).toFixed(1) + "k" || 0}
                 </p>
               </div>
             </div>
