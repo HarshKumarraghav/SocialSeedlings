@@ -6,7 +6,6 @@ import Image from "next/image";
 import { BiLocationPlus, BiSolidPhotoAlbum } from "react-icons/bi";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiOutlineCloudDownload, AiOutlineGlobal } from "react-icons/ai";
-import { RiUserFollowFill } from "react-icons/ri";
 import Loader from "@/components/Loader/Loader";
 import { FcLike } from "react-icons/fc";
 const UserInfo = () => {
