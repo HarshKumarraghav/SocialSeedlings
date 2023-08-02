@@ -131,7 +131,7 @@ effect is triggered whenever there is a change in the `hasNextPage`, `isFetching
       >
         {!hasNextPage && (
           <h1>
-            You have caught up with <br /> the user's images!
+            You have caught up with <br /> the user&apos;s images!
           </h1>
         )}
       </div>
