@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Classes from "./userimages.module.css";
 import ImageComponent from "@/components/ImageComponent/ImageComponent";
