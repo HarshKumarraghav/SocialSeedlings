@@ -27,6 +27,7 @@ const fetchPost = async (page: number) => {
 export const useInfiniteFetch = () => {
   return useInfiniteQuery({
     queryKey: ["posts"],
+    staleTime: 10000 * 5,
     queryFn: ({ pageParam = 1 }) => fetchPost(pageParam),
     getNextPageParam: (_, allPages) => {
       const lastPage = allPages[allPages.length - 1];
