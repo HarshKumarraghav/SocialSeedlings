@@ -9,9 +9,11 @@ const Container = () => {
   return (
     <div className={Classes.Container}>
       <div className={Classes.sidebar}>
+        {/* Sidebar Components */}
         <Sidebar />
       </div>
       <div className={Classes.mainSection}>
+        {/* Post Components */}
         <Post />
       </div>
       <div className={Classes.RightSidebar}>
