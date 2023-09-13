@@ -19,8 +19,8 @@ const fetchPost = async (page: number) => {
 };
 
 /**
- * The `useInfiniteFetch` function is a custom hook that uses the `useInfiniteQuery` hook from the
- * `react-query` library to fetch posts in an infinite scroll manner.
+ * The `useInfiniteFetch` function is a custom hook that uses `useInfiniteQuery` from the React Query
+ * library to fetch posts in an infinite scroll manner.
  * @returns The `useInfiniteFetch` function is returning the result of calling the `useInfiniteQuery`
  * hook.
  */
